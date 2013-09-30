@@ -90,7 +90,6 @@ class Sudoku:
     for i in possible_values:
       new_board = copy.copy(self.board)
       new_board[zero_index] = i
-      next_board = "".join(new_board)
       new_sudoku = Sudoku("".join(new_board))
       result = new_sudoku.solve()
       if result:
